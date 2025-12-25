@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smucky Store - Tu Tienda Online</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🛍️ Smucky Chavarín</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+                <button id="searchBtn">🔍 Buscar</button>
+            </div>
+            <div class="header-actions">
+                <button class="cart-btn" id="cartBtn">
+                    🛒 Carrito <span id="cartCount" class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-link active">Inicio</a>
+            <a href="#" class="nav-link" data-category="navidad">Navidad</a>
+            <a href="#" class="nav-link" data-category="clothing">Ropa</a>
+            <!--<a href="#" class="nav-link" data-category="home">Hogar</a>
+            <a href="#" class="nav-link" data-category="books">Libros</a>
+            <a href="#" class="nav-link" data-category="sports">Deportes</a>-->
+        </div>
+    </nav>
+
+    <!-- Banner Promocional -->
+    <div class="banner">
+        <h2>¡Bienvenido a Smucky Chavarín!</h2>
+        <p>Descubre miles de productos con los mejores precios</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Filtros y Ordenamiento -->
+        <div class="filters-section">
+            <div class="sort-container">
+                <label for="sortSelect">Ordenar por:</label>
+                <select id="sortSelect">
+                    <option value="default">Más relevante</option>
+                    <option value="price-low">Menor precio</option>
+                    <option value="price-high">Mayor precio</option>
+                    <option value="rating">Mejor valorados</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+            <!-- Los productos se cargarán aquí con JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Tu Carrito de Compras</h2>
+                <button class="close-btn" id="closeCartBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems" class="cart-items">
+                    <!-- Los items del carrito se cargarán aquí -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-summary">
+                    <h3>Total: $<span id="cartTotal">0.00</span></h3>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Smucky Chavarín es tu tienda online de confianza con los mejores productos a los mejores precios.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg> Facebook</a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg> Instagram</a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg> X</a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg> Tik Tok </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Smucky Chavarín. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
