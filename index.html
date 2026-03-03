@@ -17,11 +17,23 @@
                 <h1>SMUCKY´s By CHAVAMON</h1>
             </div>
             <nav class="main-nav">
-                <a href="#" class="nav-link" data-category="all">Inicio</a>
-                <a href="#" class="nav-link" data-category="clothing">Ropa</a>
-                <a href="#" class="nav-link" data-category="navidad">Navidad</a>
-                <a href="#nuevos">Nuevos</a>
-                <a href="#ofertas">Ofertas</a>
+                <a href="#" class="nav-link active" data-category="all">Inicio</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-category="hombre">Hombre</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-subcategory="playeras">Playeras</a>
+                        <a href="#" class="dropdown-link" data-subcategory="playeras_sin_mangas">Playeras Sin Mangas</a>
+                        <a href="#" class="dropdown-link" data-subcategory="calcetines">Calcetines Deportivos</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" data-category="mujer">Mujer</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-subcategory="blusas">Blusas</a>
+                        <a href="#" class="dropdown-link" data-subcategory="short_deportivo">Short Deportivo</a>
+                        <a href="#" class="dropdown-link" data-subcategory="calcetines">Calcetines Deportivos</a>
+                    </div>
+                </div>
             </nav>
             <div class="header-actions">
                 <div class="search-icon" id="searchToggle">🔍</div>
@@ -46,27 +58,47 @@
                 <button class="hero-cta">Comprar Ahora</button>
             </div>
             <div class="hero-image">
-                <img src="Imagenes de ropa/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.14 PM.jpg" alt="Playera Premium">
+                <img src="Imagenes de ropa/Ropa de Hombre/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.14 PM.jpg" alt="Playera Premium">
             </div>
         </div>
         <div class="hero-slide" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
             <div class="hero-content">
-                <h1 class="hero-title">Hasta 40% Descuento</h1>
-                <p class="hero-subtitle">En toda la colección de calcetines premium</p>
-                <button class="hero-cta">Ver Promoción</button>
+                <h1 class="hero-title">Blusas Premium</h1>
+                <p class="hero-subtitle">Comodidad y estilo para mujer</p>
+                <button class="hero-cta">Ver Blusas</button>
             </div>
             <div class="hero-image">
-                <img src="Imagenes de ropa/Calcetines deportivo/WhatsApp Image 2026-03-02 at 7.19.14 PM (3).jpg" alt="Calcetines Premium">
+                <img src="Imagenes de ropa/Ropa de Mujer/Blusa/1.jpg" alt="Blusa Premium">
             </div>
         </div>
         <div class="hero-slide" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
             <div class="hero-content">
-                <h1 class="hero-title">Ropa Deportiva Elite</h1>
-                <p class="hero-subtitle">Tecnología avanzada para tu mejor rendimiento</p>
-                <button class="hero-cta">Explorar Colección</button>
+                <h1 class="hero-title">Playeras Sin Mangas</h1>
+                <p class="hero-subtitle">Máxima libertad de movimiento</p>
+                <button class="hero-cta">Ver Sin Mangas</button>
             </div>
             <div class="hero-image">
-                <img src="Imagenes de ropa/Playera sin mangas/WhatsApp Image 2026-03-02 at 7.19.15 PM (3).jpg" alt="Playera Sin Mangas">
+                <img src="Imagenes de ropa/Ropa de Hombre/Playera sin mangas/WhatsApp Image 2026-03-02 at 7.19.15 PM (3).jpg" alt="Playera Sin Mangas">
+            </div>
+        </div>
+        <div class="hero-slide" style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);">
+            <div class="hero-content">
+                <h1 class="hero-title">Calcetines Hombre y Mujer</h1>
+                <p class="hero-subtitle">Confort premium para todos</p>
+                <button class="hero-cta">Ver Calcetines</button>
+            </div>
+            <div class="hero-image">
+                <img src="Imagenes de ropa/Calcetines deportivo/WhatsApp Image 2026-03-02 at 7.19.14 PM (3).jpg" alt="Calcetines Deportivos">
+            </div>
+        </div>
+        <div class="hero-slide" style="background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);">
+            <div class="hero-content">
+                <h1 class="hero-title">Short Deportivo</h1>
+                <p class="hero-subtitle">Ligero, cómodo y listo para entrenar</p>
+                <button class="hero-cta">Ver Short</button>
+            </div>
+            <div class="hero-image">
+                <img src="Imagenes de ropa/Ropa de Mujer/Short deportivo/1.jpg" alt="Short Deportivo">
             </div>
         </div>
         <button class="hero-arrow hero-prev">‹</button>
@@ -75,52 +107,94 @@
             <span class="dot active" data-slide="0"></span>
             <span class="dot" data-slide="1"></span>
             <span class="dot" data-slide="2"></span>
-        </div>
-    </section>
-
-    <!-- Featured Categories -->
-    <section class="featured-categories">
-        <div class="container">
-            <div class="category-grid">
-                <div class="category-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                    <h3>Ropa Deportiva</h3>
-                    <p>Diseñada para alto rendimiento</p>
-                    <button class="category-btn">Comprar</button>
-                </div>
-                <div class="category-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                    <h3>Colección Navidad</h3>
-                    <p>Edición limitada</p>
-                    <button class="category-btn">Comprar</button>
-                </div>
-                <div class="category-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                    <h3>Accesorios</h3>
-                    <p>Completa tu look</p>
-                    <button class="category-btn">Comprar</button>
-                </div>
-            </div>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
         </div>
     </section>
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Sección de Productos Destacados -->
-        <section class="featured-section">
+        <!-- SECCIÓN HOMBRE -->
+        <div class="category-divider" id="seccion-hombre">
+            <h2>HOMBRE</h2>
+        </div>
+        
+        <!-- Playeras Premium Hombre -->
+        <section class="featured-section" id="playeras-hombre">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Productos Destacados</h2>
-                    <p class="section-subtitle">Lo más popular de nuestra colección</p>
+                    <h2 class="section-title">Playeras Premium</h2>
+                    <p class="section-subtitle">Comodidad y estilo en cada prenda</p>
                 </div>
-                <div class="featured-grid" id="featuredGrid">
-                    <!-- Productos destacados se cargarán aquí -->
+                <div class="featured-grid" id="playeras-hombre-grid"></div>
+            </div>
+        </section>
+
+        <!-- Playeras Sin Mangas Hombre -->
+        <section class="featured-section" id="playeras-sin-mangas-hombre">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Playeras Sin Mangas</h2>
+                    <p class="section-subtitle">Libertad de movimiento</p>
                 </div>
+                <div class="featured-grid" id="playeras-sin-mangas-hombre-grid"></div>
+            </div>
+        </section>
+
+        <!-- Calcetines Deportivos -->
+        <section class="featured-section" id="calcetines">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Calcetines Deportivos</h2>
+                    <p class="section-subtitle">Tecnología y confort en tus pies</p>
+                </div>
+                <div class="featured-grid" id="calcetines-grid"></div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN MUJER -->
+        <div class="category-divider" id="seccion-mujer">
+            <h2>MUJER</h2>
+        </div>
+        
+        <!-- Blusas Mujer -->
+        <section class="featured-section" id="blusas-mujer">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Blusas</h2>
+                    <p class="section-subtitle">Elegancia y comodidad</p>
+                </div>
+                <div class="featured-grid" id="blusas-mujer-grid"></div>
+            </div>
+        </section>
+
+        <!-- Short Deportivo Mujer -->
+        <section class="featured-section" id="short-deportivo-mujer">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Short Deportivo</h2>
+                    <p class="section-subtitle">Rendimiento y frescura para entrenar</p>
+                </div>
+                <div class="featured-grid" id="short-deportivo-mujer-grid"></div>
+            </div>
+        </section>
+
+        <!-- Calcetines Mujer -->
+        <section class="featured-section" id="calcetines-mujer">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Calcetines Deportivos Mujer</h2>
+                    <p class="section-subtitle">Comodidad premium</p>
+                </div>
+                <div class="featured-grid" id="calcetines-mujer-grid"></div>
             </div>
         </section>
 
         <!-- Todos los Productos -->
-        <section class="products-section">
+        <section class="products-section" id="todosProductosSection">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Todos los Productos</h2>
+                    
                     <!-- Filtros y Ordenamiento -->
                     <div class="filters-section">
                         <div class="sort-container">

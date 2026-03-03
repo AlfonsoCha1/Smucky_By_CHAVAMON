@@ -1,111 +1,118 @@
 // ====== DATOS DE PRODUCTOS ======
 const products = [
+    // PLAYERAS PREMIUM HOMBRE
     {
         id: 1,
-        name: "Playera Premium Smucky Rojo",
-        category: "clothing",
-        price: 299,
+        name: "Playera Premium Azul Claro",
+        category: ["playeras_hombre"],
+        price: 150,
         rating: 4.9,
-        image: "Imagenes de ropa/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.14 PM.jpg",
+        image: "Imagenes de ropa/Ropa de Hombre/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.14 PM.jpg",
         featured: true,
         badge: "new"
     },
     {
         id: 2,
-        name: "Playera Premium Smucky Negro",
-        category: "clothing",
-        price: 299,
+        name: "Playera Premium Rojizo",
+        category: ["playeras_hombre"],
+        price: 150,
         rating: 4.8,
-        image: "Imagenes de ropa/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.13 PM (1).jpg",
-        featured: true,
-        badge: null
-    },
-    {
-        id: 3,
-        name: "Playera Premium Performance Azul",
-        category: "clothing",
-        price: 289,
-        rating: 4.7,
-        image: "Imagenes de ropa/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.13 PM (2).jpg",
-        featured: true,
-        badge: "sale"
-    },
-    {
-        id: 4,
-        name: "Playera Premium Edición Limitada",
-        category: "clothing",
-        price: 349,
-        rating: 4.9,
-        image: "Imagenes de ropa/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.13 PM (3).jpg",
+        image: "Imagenes de ropa/Ropa de Hombre/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.13 PM (1).jpg",
         featured: true,
         badge: "new"
     },
     {
-        id: 5,
-        name: "Playera Premium White Collection",
-        category: "clothing",
-        price: 279,
-        rating: 4.6,
-        image: "Imagenes de ropa/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.15 PM (2).jpg",
+        id: 3,
+        name: "Playera Premium Rosa",
+        category: ["playeras_hombre"],
+        price: 150,
+        rating: 4.7,
+        image: "Imagenes de ropa/Ropa de Hombre/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.13 PM (2).jpg",
         featured: true,
-        badge: null
+        badge: "new"
     },
     {
+        id: 4,
+        name: "Playera Premium Blanco",
+        category: ["playeras_hombre"],
+        price: 150,
+        rating: 4.9,
+        image: "Imagenes de ropa/Ropa de Hombre/Playera Premium/WhatsApp Image 2026-03-02 at 7.19.13 PM (3).jpg",
+        featured: true,
+        badge: "new"
+    },
+    
+    // PLAYERAS SIN MANGAS HOMBRE
+    {
+        id: 9,
+        name: "Playera Sin Mangas",
+        category: ["playeras_sin_mangas_hombre"],
+        price: 70,
+        rating: 4.8,
+        image: "Imagenes de ropa/Ropa de Hombre/Playera sin mangas/WhatsApp Image 2026-03-02 at 7.19.15 PM (3).jpg",
+        featured: true,
+        badge: "new"
+    },
+    // CALCETINES (AMBOS)
+    {
         id: 6,
-        name: "Calcetines Deportivos Premium Negro",
-        category: "clothing",
-        price: 149,
+        name: "Calcetines Deportivos Multicolores",
+        category: ["calcetines"],
+        price: 45,
         rating: 4.8,
         image: "Imagenes de ropa/Calcetines deportivo/WhatsApp Image 2026-03-02 at 7.19.14 PM (3).jpg",
         featured: true,
-        badge: "sale"
+        badge: "new"
     },
     {
         id: 7,
         name: "Calcetines Deportivos Multicolor",
-        category: "clothing",
-        price: 159,
+        category: ["calcetines"],
+        price: 45,
         rating: 4.7,
         image: "Imagenes de ropa/Calcetines deportivo/WhatsApp Image 2026-03-02 at 7.19.15 PM.jpg",
         featured: false,
-        badge: null
+        badge: "new"
     },
     {
         id: 8,
         name: "Calcetines Premium Pack Completo",
-        category: "clothing",
-        price: 169,
+        category: ["calcetines"],
+        price: 45,
         rating: 4.9,
         image: "Imagenes de ropa/Calcetines deportivo/WhatsApp Image 2026-03-02 at 7.19.15 PM (1).jpg",
         featured: false,
-        badge: null
+        badge: "new"
     },
+    // BLUSAS MUJER
     {
-        id: 9,
-        name: "Playera Sin Mangas Smucky",
-        category: "clothing",
-        price: 199,
-        rating: 4.8,
-        image: "Imagenes de ropa/Playera sin mangas/WhatsApp Image 2026-03-02 at 7.19.15 PM (3).jpg",
+        id: 10,
+        name: "Blusa Premium Smucky Dama",
+        category: ["blusas_mujer"],
+        price: 60,
+        rating: 4.9,
+        image: "Imagenes de ropa/Ropa de Mujer/Blusa/1.jpg",
         featured: true,
         badge: "new"
     },
     {
-        id: 10,
-        name: "Blusa Premium Smucky Dama",
-        category: "clothing",
-        price: 329,
-        rating: 4.9,
-        image: "Imagenes de ropa/Blusa/1.jpg",
+        id: 11,
+        name: "Short Deportivo",
+        category: ["short_deportivo_mujer"],
+        price: 150,
+        rating: 4.8,
+        image: "Imagenes de ropa/Ropa de Mujer/Short deportivo/2.jpg",
+        gallery: [
+            "Imagenes de ropa/Ropa de Mujer/Short deportivo/2.jpg",
+            "Imagenes de ropa/Ropa de Mujer/Short deportivo/4.jpg"
+        ],
+        subtitle: "Parte de enfrente y parte de atrás",
         featured: true,
-        badge: "sale"
+        badge: "new"
     }
 ];
 
 // ====== REFERENCIAS A ELEMENTOS DEL DOM ======
-const productsGrid = document.getElementById("productsGrid");
-const featuredGrid = document.getElementById("featuredGrid");
-const navLinks = document.querySelectorAll(".main-nav .nav-link");
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 const searchToggle = document.getElementById("searchToggle");
@@ -126,6 +133,31 @@ const heroSlides = document.querySelectorAll(".hero-slide");
 const heroPrev = document.querySelector(".hero-prev");
 const heroNext = document.querySelector(".hero-next");
 const heroDots = document.querySelectorAll(".dot");
+
+// Navigation
+const navLinks = document.querySelectorAll(".nav-link");
+const dropdownLinks = document.querySelectorAll(".dropdown-link");
+
+// Manejar clicks en nav-link principales (Hombre/Mujer)
+navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+        const category = link.dataset.category;
+        
+        if (category === "hombre") {
+            e.preventDefault();
+            const seccion = document.getElementById("seccion-hombre");
+            if (seccion) {
+                seccion.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        } else if (category === "mujer") {
+            e.preventDefault();
+            const seccion = document.getElementById("seccion-mujer");
+            if (seccion) {
+                seccion.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
+    });
+});
 
 // ====== ESTADO ======
 let currentCategory = "all";
@@ -184,16 +216,81 @@ heroDots.forEach((dot, index) => {
     });
 });
 
-// ====== RENDER DE PRODUCTOS ======
-function renderProducts(list, container = productsGrid) {
-    container.innerHTML = "";
+function getProductImageHTML(product) {
+    if (Array.isArray(product.gallery) && product.gallery.length >= 2) {
+        return `
+            <div class="product-image split-image">
+                <div class="split-item">
+                    <img src="${product.gallery[0]}" alt="${product.name} frente">
+                </div>
+                <div class="split-item">
+                    <img src="${product.gallery[1]}" alt="${product.name} atrás">
+                </div>
+            </div>
+        `;
+    }
 
-    if (list.length === 0) {
-        container.innerHTML = "<p style='grid-column: 1/-1; text-align: center; padding: 40px; color: #666;'>No se encontraron productos.</p>";
+    return `
+        <div class="product-image">
+            <img src="${product.image}" alt="${product.name}">
+        </div>
+    `;
+}
+
+// ====== RENDER DE PRODUCTOS ======
+function renderProducts(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    // Determinar el grid container basado en el ID de la sección
+    let gridId = "";
+    
+    if (sectionId === "playeras-hombre") {
+        gridId = "playeras-hombre-grid";
+    } else if (sectionId === "playeras-sin-mangas-hombre") {
+        gridId = "playeras-sin-mangas-hombre-grid";
+    } else if (sectionId === "calcetines") {
+        gridId = "calcetines-grid";
+    } else if (sectionId === "blusas-mujer") {
+        gridId = "blusas-mujer-grid";
+    } else if (sectionId === "short-deportivo-mujer") {
+        gridId = "short-deportivo-mujer-grid";
+    } else if (sectionId === "calcetines-mujer") {
+        gridId = "calcetines-mujer-grid";
+    }
+
+    const grid = document.getElementById(gridId);
+    if (!grid) return;
+
+    // Determinar qué categoría mostrar basado en el ID de la sección
+    let categoriesToShow = [];
+    
+    if (sectionId === "playeras-hombre") {
+        categoriesToShow = ["playeras_hombre"];
+    } else if (sectionId === "playeras-sin-mangas-hombre") {
+        categoriesToShow = ["playeras_sin_mangas_hombre"];
+    } else if (sectionId === "calcetines") {
+        categoriesToShow = ["calcetines"];
+    } else if (sectionId === "blusas-mujer") {
+        categoriesToShow = ["blusas_mujer"];
+    } else if (sectionId === "short-deportivo-mujer") {
+        categoriesToShow = ["short_deportivo_mujer"];
+    } else if (sectionId === "calcetines-mujer") {
+        categoriesToShow = ["calcetines"];
+    }
+
+    const productsToShow = products.filter(product => 
+        product.category.some(cat => categoriesToShow.includes(cat))
+    );
+
+    grid.innerHTML = "";
+
+    if (productsToShow.length === 0) {
+        grid.innerHTML = "<p style='grid-column: 1/-1; text-align: center; padding: 40px; color: #666;'>No se encontraron productos.</p>";
         return;
     }
 
-    list.forEach(product => {
+    productsToShow.forEach(product => {
         const card = document.createElement("div");
         card.classList.add("product-card");
         
@@ -206,28 +303,88 @@ function renderProducts(list, container = productsGrid) {
 
         card.innerHTML = `
             ${badgeHTML}
-            <div class="product-image">
-                <img src="${product.image}" alt="${product.name}">
-            </div>
+            ${getProductImageHTML(product)}
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
+                ${product.subtitle ? `<p class="product-subtitle">${product.subtitle}</p>` : ""}
                 <p class="product-price">$${product.price.toFixed(2)}</p>
-                <p class="product-rating">⭐ ${product.rating.toFixed(1)} / 5.0</p>
                 <button class="add-to-cart-btn" data-id="${product.id}">
                     Agregar
                 </button>
             </div>
         `;
-        container.appendChild(card);
+        grid.appendChild(card);
     });
 
     attachAddToCartEvents();
 }
 
-// Render Featured Products
+function loadCategoryProducts(category) {
+    // Hacer scroll a la sección correcta
+    let sectionId = "";
+    
+    switch(category) {
+        case "playeras":
+            sectionId = "playeras-hombre";
+            break;
+        case "playeras_sin_mangas":
+            sectionId = "playeras-sin-mangas-hombre";
+            break;
+        case "calcetines":
+            sectionId = "calcetines";
+            break;
+        case "blusas":
+            sectionId = "blusas-mujer";
+            break;
+        case "short_deportivo":
+            sectionId = "short-deportivo-mujer";
+            break;
+        default:
+            sectionId = "playeras-hombre";
+    }
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+        // Scroll suave a la sección
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+}
+
+// Render Featured Products  
 function renderFeaturedProducts() {
     const featured = products.filter(p => p.featured);
-    renderProducts(featured, featuredGrid);
+    const featuredGrid = document.getElementById("featuredGrid");
+    if (!featuredGrid) return;
+    
+    featuredGrid.innerHTML = "";
+    
+    featured.forEach(product => {
+        const card = document.createElement("div");
+        card.classList.add("product-card");
+        
+        let badgeHTML = "";
+        if (product.badge === "new") {
+            badgeHTML = '<span class="product-badge new">Nuevo</span>';
+        } else if (product.badge === "sale") {
+            badgeHTML = '<span class="product-badge sale">Oferta</span>';
+        }
+
+        card.innerHTML = `
+            ${badgeHTML}
+            ${getProductImageHTML(product)}
+            <div class="product-info">
+                <h3 class="product-title">${product.name}</h3>
+                ${product.subtitle ? `<p class="product-subtitle">${product.subtitle}</p>` : ""}
+                <p class="product-price">$${product.price.toFixed(2)}</p>
+                <button class="add-to-cart-btn" data-id="${product.id}">
+                    Agregar
+                </button>
+            </div>
+        `;
+        featuredGrid.appendChild(card);
+    });
+    
+    attachAddToCartEvents();
 }
 
 // ====== AÑADIR EVENTOS A BOTONES "AGREGAR AL CARRITO" ======
@@ -243,16 +400,8 @@ function attachAddToCartEvents() {
 
 // ====== FILTRAR POR CATEGORÍA ======
 function filterByCategory(category) {
-    currentCategory = category;
-    searchInput.value = ""; // limpia búsqueda
-
-    if (category === "all") {
-        filteredProducts = [...products];
-    } else {
-        filteredProducts = products.filter(p => p.category === category);
-    }
-
-    applySortAndRender();
+    // Función mantenida por compatibilidad pero simplificada
+    // El sistema actual usa loadCategoryProducts() en su lugar
 }
 
 // ====== BÚSQUEDA ======
@@ -260,39 +409,60 @@ function searchProducts() {
     const term = searchInput.value.trim().toLowerCase();
 
     if (term === "") {
-        // si está vacío, mostrar según categoría actual
-        filterByCategory(currentCategory);
+        // Si está vacío, mostrar productos relacionados
+        renderFeaturedProducts();
         return;
     }
 
-    filteredProducts = products.filter(p =>
+    // Buscar en todos los productos
+    const results = products.filter(p =>
         p.name.toLowerCase().includes(term)
     );
 
-    applySortAndRender();
+    // Mostrar resultados en featured grid temporalmente
+    const featuredGrid = document.getElementById("featuredGrid");
+    if (!featuredGrid) return;
+    
+    featuredGrid.innerHTML = "";
+    
+    if (results.length === 0) {
+        featuredGrid.innerHTML = "<p style='grid-column: 1/-1; text-align: center; padding: 40px; color: #666;'>No se encontraron productos.</p>";
+        return;
+    }
+    
+    results.forEach(product => {
+        const card = document.createElement("div");
+        card.classList.add("product-card");
+        
+        let badgeHTML = "";
+        if (product.badge === "new") {
+            badgeHTML = '<span class="product-badge new">Nuevo</span>';
+        } else if (product.badge === "sale") {
+            badgeHTML = '<span class="product-badge sale">Oferta</span>';
+        }
+
+        card.innerHTML = `
+            ${badgeHTML}
+            ${getProductImageHTML(product)}
+            <div class="product-info">
+                <h3 class="product-title">${product.name}</h3>
+                ${product.subtitle ? `<p class="product-subtitle">${product.subtitle}</p>` : ""}
+                <p class="product-price">$${product.price.toFixed(2)}</p>
+                <button class="add-to-cart-btn" data-id="${product.id}">
+                    Agregar
+                </button>
+            </div>
+        `;
+        featuredGrid.appendChild(card);
+    });
+    
+    attachAddToCartEvents();
 }
 
 // ====== ORDENAMIENTO ======
 function applySortAndRender() {
-    let list = [...filteredProducts];
-
-    switch (sortSelect.value) {
-        case "price-low":
-            list.sort((a, b) => a.price - b.price);
-            break;
-        case "price-high":
-            list.sort((a, b) => b.price - a.price);
-            break;
-        case "rating":
-            list.sort((a, b) => b.rating - a.rating);
-            break;
-        default:
-            // "Más relevante": sin ordenar especial, solo por id
-            list.sort((a, b) => a.id - b.id);
-            break;
-    }
-
-    renderProducts(list);
+    // Función mantenida por compatibilidad
+    // El sistema actual no utiliza ordenamiento dinámico
 }
 
 // ====== CARRITO ======
@@ -381,16 +551,14 @@ searchToggle.addEventListener("click", () => {
     }
 });
 
-// Nav links
-navLinks.forEach(link => {
+// Dropdown links
+dropdownLinks.forEach(link => {
     link.addEventListener("click", (e) => {
         e.preventDefault();
-
-        navLinks.forEach(l => l.classList.remove("active"));
-        link.classList.add("active");
-
-        const category = link.dataset.category || "all";
-        filterByCategory(category);
+        const subcategory = link.dataset.subcategory;
+        if (subcategory) {
+            loadCategoryProducts(subcategory);
+        }
     });
 });
 
@@ -448,7 +616,13 @@ newsletterBtn.addEventListener("click", () => {
 });
 
 // ====== INICIO ======
-renderFeaturedProducts();
-filterByCategory("all");
+// Renderizar todos los productos en sus respectivas secciones
+renderProducts("playeras-hombre");
+renderProducts("playeras-sin-mangas-hombre");
+renderProducts("calcetines");
+renderProducts("blusas-mujer");
+renderProducts("short-deportivo-mujer");
+renderProducts("calcetines-mujer");
+
 updateCartUI();
 showSlide(0);
